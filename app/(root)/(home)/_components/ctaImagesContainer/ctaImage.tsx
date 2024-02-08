@@ -26,13 +26,15 @@ const CtaImage = ({
 				className="w-full h-full object-cover  object-center "
 			/>
 			<div className="absolute bottom-[2rem] right-[2rem] text-right text-white bg-black/10 p-2 rounded-lg">
-				<p className="text-5xl  tracking-wide font-semibold">
+				<p className="text-3xl lg:text-5xl  tracking-wide font-semibold">
 					{heading}
 				</p>
-				<p className="text-xl  tracking-widest">{description}</p>
+				<p className="text-xl lg:text-xl  tracking-widest">
+					{description}
+				</p>
 				<Button
 					size={'lg'}
-					className="text-lg tracking-wider"
+					className="text-sm p-4 md:p-6 lg:px-8 lg:text-lg tracking-wider"
 					variant={'default'}
 				>
 					{actionText}

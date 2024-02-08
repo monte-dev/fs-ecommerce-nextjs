@@ -1,34 +1,68 @@
-[
-	{
-		"label": "Engagement",
-		"subLinks": [
-			"Solitaire Rings",
-			"Halo Rings",
-			"Vintage Rings",
-			"Custom Designs"
-		]
-	},
-	{
-		"label": "Jewelry",
-		"subLinks": [
-			"Earrings",
-			"Bracelets",
-			"Necklaces",
-			"Rings",
-			"Men's Jewelry",
-			"Women's Jewelry"
-		]
-	},
-	{
-		"label": "Watches",
-		"subLinks": ["Men's Watches", "Women's Watches"]
-	},
-	{
-		"label": "Brands",
-		"subLinks": ["Brand 1", "Brand 2", "Brand 3", "Brand 4"]
-	},
-	{
-		"label": "Services",
-		"subLinks": ["About", "Returns and Refunds", "Contact"]
-	}
-]
+{
+	"navigation": [
+		{
+			"label": "Engagement",
+			"subLinks": [
+				"Solitaire Rings",
+				"Halo Rings",
+				"Vintage Rings",
+				"Custom Designs"
+			]
+		},
+		{
+			"label": "Jewelry",
+			"subLinks": [
+				"Earrings",
+				"Bracelets",
+				"Necklaces",
+				"Rings",
+				"Men's Jewelry",
+				"Women's Jewelry"
+			]
+		},
+		{
+			"label": "Watches",
+			"subLinks": ["Men's Watches", "Women's Watches"]
+		},
+		{
+			"label": "Brands",
+			"subLinks": ["Brand 1", "Brand 2", "Brand 3", "Brand 4"]
+		},
+		{
+			"label": "Services",
+			"subLinks": ["About", "Returns and Refunds", "Contact"]
+		}
+	],
+	"brands": [
+		{
+			"key": "bvlgari",
+			"name": "Bvlgari",
+			"src": "/images/brands/brand_logo_bvlgari.png"
+		},
+		{
+			"key": "cartier",
+			"name": "Cartier",
+			"src": "/images/brands/brand_logo_cartier.png"
+		},
+		{
+			"key": "choppard",
+			"name": "Choppard",
+			"src": "/images/brands/brand_logo_choppard.png"
+		},
+		{
+			"key": "patek",
+			"name": "Patek & Phillipe",
+			"src": "/images/brands/brand_logo_patek.png"
+		},
+		{
+			"key": "rolex",
+			"name": "Rolex",
+			"src": "/images/brands/brand_logo_rolex.png"
+		},
+		{
+			"key": "tiffany",
+			"name": "Tiffany & Co.",
+			"src": "/images/brands/brand_logo_tiffany.png"
+		}
+	]
+}

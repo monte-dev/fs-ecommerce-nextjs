@@ -13,26 +13,26 @@ import {
 import { Separator } from '@/components/ui/separator';
 
 interface LinksProps {
-	data: {
+	navigation: {
 		label: string;
 		subLinks: string[];
 	}[];
 }
 
-const Links = ({ data }: LinksProps) => {
+const Links = ({ navigation }: LinksProps) => {
 	const pathname = usePathname();
 
 	return (
 		<NavigationMenu className="flex-2 hidden md:flex">
 			<NavigationMenuList className="flex items-center justify-center">
-				{data.map((link) => (
+				{navigation.map((link) => (
 					<NavigationMenuItem key={link.label} className="relative">
 						<NavigationMenuTrigger className="tracking-wider text-[1rem] lg:text-lg  lg:gap-x-4">
 							{link.label}
 						</NavigationMenuTrigger>
 						<NavigationMenuContent>
 							{link.subLinks && (
-								<NavigationMenuList className="w-[550px] h-20 px-4 gap-x-4 flex">
+								<NavigationMenuList className="w-[550px] h-20 px-4 gap-x-4 flex z-50">
 									{link.subLinks.map((link) => (
 										<NavigationMenuItem key={link}>
 											<NavigationMenuLink

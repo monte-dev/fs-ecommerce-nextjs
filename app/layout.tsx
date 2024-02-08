@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Teko } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
+import { cn } from '@/lib/utils';
 
 const font = Teko({
 	weight: ['300', '400', '500', '600', '700'],
@@ -20,10 +21,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={font.className}>
+			<body className={cn('', font.className)}>
 				<ThemeProvider
 					attribute="class"
-					defaultTheme="system"
+					defaultTheme="light"
 					storageKey="exquisiteThemeKey"
 				>
 					{children}

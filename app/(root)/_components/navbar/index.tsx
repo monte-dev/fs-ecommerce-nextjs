@@ -1,9 +1,10 @@
 import { promises as fs } from 'fs';
+import { cn } from '@/lib/utils';
 
 import Links from './links';
 import Logo from './logo';
 import Menu from './menu';
-import { cn } from '@/lib/utils';
+
 interface NavbarProps {
 	className?: string;
 }
@@ -18,7 +19,7 @@ const Navbar = async ({ className }: NavbarProps) => {
 			)}
 		>
 			<Logo size={'lg'} withText />
-			<Links data={links} />
+			<Links navigation={links.navigation} />
 			<Menu />
 		</div>
 	);
