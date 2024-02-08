@@ -1,6 +1,7 @@
 import { cn } from '@/lib/utils';
 import { VariantProps, cva } from 'class-variance-authority';
 import { Reenie_Beanie } from 'next/font/google';
+import Link from 'next/link';
 
 const font = Reenie_Beanie({
 	weight: '400',
@@ -27,7 +28,7 @@ interface LogoProps extends VariantProps<typeof logoSizes> {
 
 const Logo = ({ withText, size }: LogoProps) => {
 	return (
-		<div className="flex items-center">
+		<Link href={'/'} className="flex items-center flex-2 xl:flex-1 me-6">
 			<div className={cn('flex', logoSizes({ size }))}>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -43,14 +44,16 @@ const Logo = ({ withText, size }: LogoProps) => {
 				</svg>
 			</div>
 			{withText && (
-				<div>
-					<p className="text-4xl -mb-1 tracking-wide">Exquisite</p>
-					<p className={cn('text-2xl', font.className)}>
+				<div className="hidden lg:block">
+					<p className="md:text-2xl lg:text-4xl -mb-1 tracking-wide">
+						Exquisite
+					</p>
+					<p className={cn('lg:text-2xl', font.className)}>
 						Elevate Your Elegance
 					</p>
 				</div>
 			)}
-		</div>
+		</Link>
 	);
 };
 export default Logo;

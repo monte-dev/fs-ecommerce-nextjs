@@ -1,0 +1,34 @@
+[
+	{
+		"label": "Engagement",
+		"subLinks": [
+			"Solitaire Rings",
+			"Halo Rings",
+			"Vintage Rings",
+			"Custom Designs"
+		]
+	},
+	{
+		"label": "Jewelry",
+		"subLinks": [
+			"Earrings",
+			"Bracelets",
+			"Necklaces",
+			"Rings",
+			"Men's Jewelry",
+			"Women's Jewelry"
+		]
+	},
+	{
+		"label": "Watches",
+		"subLinks": ["Men's Watches", "Women's Watches"]
+	},
+	{
+		"label": "Brands",
+		"subLinks": ["Brand 1", "Brand 2", "Brand 3", "Brand 4"]
+	},
+	{
+		"label": "Services",
+		"subLinks": ["About", "Returns and Refunds", "Contact"]
+	}
+]
