@@ -34,7 +34,7 @@ const CtaImage = ({
 				</p>
 				<Button
 					size={'lg'}
-					className="text-sm p-4 md:p-6 lg:px-8 lg:text-lg tracking-wider"
+					className="text-sm p-4 md:p-6 lg:px-8 lg:text-lg tracking-wider mt-4"
 					variant={'default'}
 				>
 					{actionText}

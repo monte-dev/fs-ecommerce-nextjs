@@ -1,6 +1,7 @@
+import { Skeleton } from '@/components/ui/skeleton';
 import CtaImage from './ctaImage';
 
-const CtaImagesContainer = () => {
+export const CtaImagesContainer = () => {
 	return (
 		<section className="w-full min-h-fit">
 			<div className=" flex flex-wrap md:grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 h-fit md:h-[500px] lg:h-[750px]">
@@ -28,4 +29,3 @@ const CtaImagesContainer = () => {
 		</section>
 	);
 };
-export default CtaImagesContainer;

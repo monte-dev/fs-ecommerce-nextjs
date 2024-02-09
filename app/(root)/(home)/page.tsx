@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs';
 
 import Brands from './_components/brands';
-import CtaImagesContainer from './_components/ctaImagesContainer';
+import { CtaImagesContainer } from './_components/ctaImagesContainer';
 
 const HomePage = async () => {
 	const data = await fs.readFile(process.cwd() + '/data.json', 'utf8');
