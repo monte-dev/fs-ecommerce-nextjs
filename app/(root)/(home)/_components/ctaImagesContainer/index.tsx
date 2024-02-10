@@ -1,4 +1,3 @@
-import { Skeleton } from '@/components/ui/skeleton';
 import CtaImage from './ctaImage';
 
 export const CtaImagesContainer = () => {

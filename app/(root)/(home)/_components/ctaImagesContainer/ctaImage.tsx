@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
 
 interface CtaImageProps {
 	imageSrc: string;
@@ -18,12 +17,10 @@ const CtaImage = ({
 }: CtaImageProps) => {
 	return (
 		<div className={cn('w-full h-full relative', className)}>
-			<Image
+			<img
 				src={imageSrc}
 				alt={heading}
-				width={300}
-				height={300}
-				className="w-full h-full object-cover  object-center "
+				className="w-full h-full object-cover object-center "
 			/>
 			<div className="absolute bottom-[2rem] right-[2rem] text-right text-white bg-black/10 p-2 rounded-lg">
 				<p className="text-3xl lg:text-5xl  tracking-wide font-semibold">

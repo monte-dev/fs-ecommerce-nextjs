@@ -2,8 +2,7 @@ import { promises as fs } from 'fs';
 
 import Brands from './_components/brands';
 import { CtaImagesContainer } from './_components/ctaImagesContainer';
-
-import { prismadb } from '@/lib/db';
+import ProductCard from '@/components/ui/product-card';
 import { getAllProductsWithImages } from '@/actions/get-products';
 
 const HomePage = async () => {
@@ -15,7 +14,11 @@ const HomePage = async () => {
 		<main className="flex w-full flex-col items-center justify-between">
 			<CtaImagesContainer />
 			<Brands brands={dataParsed.brands} />
-			<ProductCard data={products} />
+			<div className="flex gap-x-2 gap-y-4 flex-wrap justify-center">
+				{products.map((product) => (
+					<ProductCard key={product.id} product={product} />
+				))}
+			</div>
 		</main>
 	);
 };
