@@ -14,7 +14,7 @@ const HomePage = async () => {
 		<main className="flex w-full flex-col items-center justify-between">
 			<CtaImagesContainer />
 			<Brands brands={dataParsed.brands} />
-			<div className="flex gap-x-2 gap-y-4 flex-wrap justify-center">
+			<div className="flex gap-x-2 gap-y-4 py-8 lg:py-12 flex-wrap justify-center">
 				{products.map((product) => (
 					<ProductCard key={product.id} product={product} />
 				))}

@@ -17,7 +17,7 @@ interface BrandsProps {
 
 const Brands = ({ brands }: BrandsProps) => {
 	return (
-		<section className="py-8 mx-16">
+		<section className="py-8 mx-16 border-y-2 my-2">
 			<Carousel
 				opts={{
 					loop: true,
@@ -26,14 +26,15 @@ const Brands = ({ brands }: BrandsProps) => {
 				<CarouselContent>
 					{brands.map((brand) => (
 						<CarouselItem
-							className="basis-1/2 md:basis-1/3 flex items-center justify-center"
+							className="basis-1/2 md:basis-1/3 flex items-center justify-center w-[120px] h-[160px] relative mx-4"
 							key={brand.key}
 						>
 							<Image
 								src={brand.src}
 								alt={brand.name}
-								width={200}
-								height={120}
+								fill
+								sizes="400"
+								className="object-fill w-[120px] px-4 py-8"
 							/>
 						</CarouselItem>
 					))}
